@@ -1,0 +1,275 @@
+.articulo1{
+    position:relative;
+    height: 20%;
+}
+.articulo1-filtro{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    width: 100%;
+    height: 700px;
+    margin: auto auto 10px;
+    position: absolute;
+    top:0%;
+    z-index: 1;
+}
+.carousel-ba{
+    position: relative;
+    top:0px;
+    z-index:-1;
+    
+}
+.imagen1{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url(../imagenes/ba1.jpg) center/cover;
+  height: 700px;
+}
+.imagen2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url(../imagenes/ba2.jpg) center/cover;
+  height: 700px;
+}
+.imagen3{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url(../imagenes/ba3.jpg) center/cover;
+  height: 700px;
+}    
+
+
+
+.nav{
+    position: absolute;
+    top:0;
+    z-index: 2;
+    
+}
+.navbar{
+    font-weight: 600;
+    padding-right: 5%;
+    padding-left: 5%;
+   
+}
+#tickets{
+    color: rgb(11, 180, 11) !important;
+}
+
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
+
+
+.articulo1-inferior{
+    color: white;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-left: -7%; 
+    position: absolute;
+    top: 45%; 
+    z-index: 2; 
+    
+}
+
+
+.articulo1-inferior p{
+    text-align: end;
+    
+} 
+.articulo1-botones button:first-child{
+margin-right: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}    
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: auto;
+
+}
+.titulo-articulo2{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    text-align:justify;
+    font-size:x-small; 
+    margin-bottom: 15%;   
+}
+
+.card .btn{
+    font-weight: 800;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    color: white;
+}
+.btn-warning{
+    color: black !important;
+}
+
+
+.articulo3{
+    display: flex ;
+    flex-direction: row;
+    margin: auto auto 30px;
+    height: 550px;
+    flex-wrap: nowrap;
+  }
+  
+  .carousel-hw{
+    width: 51% ;
+   
+  }
+  #img{
+  height: 550px;
+    object-fit: cover;  
+  }
+  
+  .divisor{
+    border-left: 1px solid white;
+    
+  }
+  .descripcion{
+    color: white;
+    padding:2%;
+    background-color: rgb(76, 76, 80);
+  }
+  
+
+
+.form-sup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+#form-sup{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;  
+ width: 48%; 
+ margin-bottom: 20px;
+}
+
+.articulo4 p{
+    display: flex;
+    justify-content: start;
+}
+
+#btn-enviar{
+    background-color: rgb(143, 206, 26) !important ;
+    border-color:currentColor;
+}
+
+.articulo4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 20%;
+    text-align: center;
+}
+.articulo4 u{
+    text-decoration: dotted underline;
+} 
+.pie{
+    background-image: linear-gradient(90deg, #1a2c35 ,#0b4558 );
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+}
+.pie a{
+    text-decoration: none;
+    color: white;
+    align-content: center;
+    font-weight: 500;
+    padding: auto 25%;
+    text-align: center;
+}
+
+
+
+@media (max-width: 991.98px){
+    *{
+        font-size: 96%;
+    }
+    .articulo1{
+       height: 20%;
+    }
+    
+   .articulo1-inferior{
+       top:40%;
+       text-align: end;
+       margin-left: 1%  
+
+   }
+   .articulo4{
+       margin: auto 5%;
+   }
+   .articulo3{
+    display: flex ;
+    flex-direction: column;
+    margin: auto auto 30px;
+    height: 100%;
+    
+  }
+  .carousel-hw{
+    width: 100% ;
+   
+  }
+ 
+  #img{
+    
+    width: 100%;
+      object-fit: cover !important;  
+    }
+}
+@media (max-width:767.98px){
+    .card{
+        width: 15rem !important;
+        font-size: small;
+       
+    }
+}
+
+
+@media (max-width: 575.98px){
+
+.card{
+    width: 100% !important;
+    font-size: medium;   
+}
+
+.articulo1-botones{
+    display: flex;
+    flex-direction: column;
+    
+}
+.articulo1-botones button:first-child{
+    margin-right: 0px;
+}
+.articulo3{
+   
+ flex-direction: column;    
+}
+.articulo3 img{
+    width: 100%;
+}
+.pie{
+    flex-direction: column;
+    height: 200px;
+}
+}
